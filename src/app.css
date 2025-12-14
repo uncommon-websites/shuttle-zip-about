@@ -38,6 +38,15 @@
 	--color-secondary-900: oklch(30% 0.1 30);
 	--color-secondary-950: oklch(20% 0.11 30);
 
-	--font-body: var(--font-family), var(--font-fallback);
-	--font-display: var(--font-body);
+	--font-body: "Inter", sans-serif;
+	--font-display: "Inter", sans-serif;
+}
+
+@layer base {
+	body {
+		background-color: #F9F9FB;
+		color: #111;
+		font-family: var(--font-body);
+		-webkit-font-smoothing: antialiased;
+	}
 }
